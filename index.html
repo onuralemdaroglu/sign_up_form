@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign Up Form</title>
+</head>
+<body>
+  <section>
+    <div class="imgBox">
+      <img src="/img/thortellini.jpeg" alt="">
+      <div class="img-text">
+        <h1>THORTELLINI</h1>
+      </div>
+    </div>
+    <div class="contentBox">
+      <div class="formBox">
+        <h2>Login</h2><br>
+        <form>
+          <div class="inputBox">
+            <span>FIRST NAME</span>
+            <input type="text" minlength="3" maxlength="20" name="firstname">
+          </div>
+          <div class="inputBox">
+            <span>LAST NAME</span>
+            <input type="text" minlength="3" maxlength="20" name="lastname">
+          </div>
+          <div class="inputBox">
+            <span>EMAIL</span>
+            <input type="email" name="email">
+          </div>
+          <div class="inputBox">
+            <span>PHONE NUMBER</span>
+            <input type="number" name="phonenumber" minlength="7" maxlength="10">
+          </div>
+          <div class="inputBox">
+            <span>PASSWORD</span>
+            <input type="password" id="password" name="password" oninput="check()">
+          </div>
+          <div class="inputBox">
+            <span>CONFIRM PASSWORD</span>
+            <input type="password" id="pass-confirm" name="pass-confirm" oninput="check()" required="required">
+          </div>
+          <div class="inputBox">
+            <input type="submit" class="create" value="Create Account" name="submit" required="required">
+          </div>
+          <div class="inputBox">
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
